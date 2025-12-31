@@ -1,6 +1,7 @@
 # Random Card in UIKit - Programmatic
 
-![image](https://github.com/user-attachments/assets/4fcddb36-77e1-4cd6-8e5a-4ab2f076e0da)
+
+![image](https://github.com/user-attachments/assets/e194baa2-46ee-47f7-9ff3-800f5cc5a156)
 
 
 
