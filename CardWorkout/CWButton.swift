@@ -11,7 +11,6 @@ class CWButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configure()
     }
     
     // If it initialize via storyboard
@@ -20,19 +19,19 @@ class CWButton: UIButton {
     }
     
     // For custom buttons
-    init(backgroundColor: UIColor, title: String) {
+    init(color: UIColor, title: String, systemImageName: String) {
         super.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        setTitle(title, for: .normal)
-        configure()
-    }
-    
-    func configure() {
-        layer.cornerRadius = 8
-        titleLabel?.font = .systemFont(ofSize: 19, weight: .semibold)
-        setTitleColor(.white, for: .normal)
-        // Use auto layout
+        
+        configuration = .prominentClearGlass()
+        configuration?.title = title
+        configuration?.baseBackgroundColor = color.withAlphaComponent(0.4)
+        configuration?.baseForegroundColor = color
+        configuration?.cornerStyle = .medium
+        
+        configuration?.image = UIImage(systemName: systemImageName)
+        configuration?.imagePadding = 10
         translatesAutoresizingMaskIntoConstraints = false
     }
+    
 
 }

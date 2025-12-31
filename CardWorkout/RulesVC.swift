@@ -80,8 +80,8 @@ class RulesVC: UIViewController {
         view.addSubview(closeButton)
         closeButton.translatesAutoresizingMaskIntoConstraints = false
         closeButton.addTarget(self, action: #selector(closeTapped), for: .touchUpInside)
-        closeButton.backgroundColor = .systemGray5
         closeButton.cornerConfiguration = .capsule()
+        closeButton.configuration = .glass()
         
         NSLayoutConstraint.activate([
             closeButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
