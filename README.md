@@ -1,6 +1,7 @@
 # Random Card in UIKit - Programmatic
 
-![image](https://github.com/user-attachments/assets/98301764-f6af-463b-96c0-c55182c076ef)
+![image](https://github.com/user-attachments/assets/4fcddb36-77e1-4cd6-8e5a-4ab2f076e0da)
+
 
 
 ### Stop button = Stops to get a random card
